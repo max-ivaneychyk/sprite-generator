@@ -1,0 +1,40 @@
+.model {
+    display: inline-block;
+}
+#sprite-model {
+    background-color: #EEE;
+    min-width: 25px;
+    min-height: 50px;
+    display: inline-block;
+}
+
+#sprite-model-resizer {
+    float: right;
+    background-color: #666;
+    width: 6px;
+    min-height: 50px;
+    cursor: e-resize;
+    display: inline-block;
+}
+#content-resizer {
+    background-color: #666;
+    cursor: n-resize;
+    display: inline-block;
+}
+
+#sprite-model-resizer:hover,
+#preview-resizer:hover {
+    background-color: #AAA;
+}
+
+#sprite-model .icon {
+    width: 20px;
+    height: 20px;
+    background: grey;
+    border: 1px solid black;
+    border-radius: 4px;
+    position: static;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}

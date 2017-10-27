@@ -1,0 +1,12 @@
+<div class='collectin'>
+    <div class="one-picture" ng-repeat='img in filter.storage.filteredImages track by $index'>
+        <div class="icons-wrap">
+            <p ng-click="filter.remove(img)" class="icon">&#xe800;</p>
+        </div>
+        <img ng-src='{{img.src}}'
+             title="Duplicate frame"
+             ng-style="img.style"
+             height="{{ filter.storage.heightFrame }}"
+             width="{{ filter.storage.widthFrame }}">
+    </div>
+</div>

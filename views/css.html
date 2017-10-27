@@ -1,0 +1,21 @@
+<div ng-controller="CssSpriteCtrl as cssSprite">
+    <div class="sprite-example"
+         ng-draggable
+         ng-style="{
+            width: cssSprite.exampleSpriteCss.width,
+            height: cssSprite.exampleSpriteCss.height,
+            zoom: filter.storage.zoom
+         }">
+
+        <img ng-show='cssSprite.storage.dataURL'
+             ng-src='{{cssSprite.storage.dataURL}}'>
+
+        <p>{{filter.storage.infoSize}}</p>
+    </div>
+
+    <div id='create_sprite'
+         ng-click="cssSprite.splitImages(cssSprite.storage.filteredImages)"
+         title="Создать спрайт">
+        Create
+    </div>
+</div>

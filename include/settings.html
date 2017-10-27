@@ -1,0 +1,35 @@
+<div class="setting-one-block">
+
+
+    <div class="one_input">
+        <p><b>Filter :</b>
+            <input ng-model='filter.storage.countSkip'
+                   onchange="angular.element(this).scope().filter.skip()" type="text" id='image_top' value='0' size="40">
+    </div>
+
+    <div class="one_input">
+        <p><b>Width :</b>
+            <input ng-model='filter.storage.widthFrame' type="text" value='0' size="40">
+    </div>
+
+    <div class="one_input">
+        <p><b>Height :</b>
+            <input ng-model='filter.storage.heightFrame' type="text" value='0' size="40">
+    </div>
+    <div class="one_input">
+        <p><b>Zoom sprite:</b>
+            <input ng-model='filter.storage.zoom' type="text" value='0' size="40">
+    </div>
+    <div class="one_input">
+         <input ng-model='filter.storage.autoFill' type="checkbox">
+            <b>Автозаполнение пустых мест в спрайте последним кадром ( если в модели не хватает кадров):</b>
+    </div>
+
+    <p class="one_input">
+    <p><b>Info :</b>
+    <div id='info'>
+        Count frames: {{filter.storage.countFrames}}
+    </div>
+    </p>
+</div>
+<div id='btn_reset'ng-click="filter.reset()">Clear All</div>

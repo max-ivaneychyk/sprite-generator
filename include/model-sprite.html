@@ -1,0 +1,14 @@
+<!-- Resize Model Sprite-->
+<p>Model Sprite:</p>
+<div class="model">
+    <div id="sprite-model-resizer"
+         resizer="vertical"
+         resize-end="filter.resizeModel($event)"
+         resizer-width="6"
+         resizer-left="#sprite-model"
+         resizer-max="800">
+    </div>
+    <div id="sprite-model">
+        <div class="icon" ng-repeat='img in filter.storage.filteredImages track by $index'>{{$index + 1 }}</div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div> SVG </div>
+
+<div ng-controller="SvgCtrl as svg">
+    <div class="sprite-example"
+         ng-draggable
+         ng-style="svg.exampleSpriteSvg">
+
+    </div>
+
+    <div id='create_sprite'
+         ng-click="svg.splitImages(svg.storage.images)"
+         title="Создать svg-спрайт">
+        Create Svg
+    </div>
+
+    <a href="{{svg.storage.dataURL}}"
+       download="{{svg.storage.fileName}}.svg"
+       ng-show="svg.storage.dataURL">
+        Download
+    </a>
+</div>

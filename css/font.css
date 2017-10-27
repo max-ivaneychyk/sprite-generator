@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icons-wrap {
+    position: relative;
+    top: 16px;
+    z-index: 20;
+}
+
+
+.icons-wrap .icon {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    color: white;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    cursor: pointer;
+    float: right;
+    text-shadow: 0px 0px 9px black;
+    font-size: 1.3em;
+}

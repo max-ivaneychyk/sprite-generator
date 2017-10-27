@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html ng-app="myGenerator">
+<head>
+    <title>Auto Sprite Create</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/modelSprite.css">
+</head>
+<body ng-controller="FilterCtrl as filter">
+
+<div ng-include="filter.includeUrl.header"></div>
+<div ng-include="filter.includeUrl.doc"></div>
+<div ng-include="filter.includeUrl.dropZone"></div>
+<div ng-include="filter.includeUrl.settings"></div>
+<div ng-view></div>
+<div ng-include="filter.includeUrl.modelSprite"></div>
+<div ng-include="filter.includeUrl.collection"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
+<script> angular.module('myGenerator', ['ngRoute']); </script>
+<script src="js/config.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/services.js"></script>
+<script src="js/directives.js"></script>
+<script src="js/controllers.js"></script>
+
+</body>
+</html>
