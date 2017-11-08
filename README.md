@@ -10,4 +10,4 @@ Change grid model sprite. And cick button Creare.
 
 ## Description
 
-Simple image sprite generator from a lot of small images.
+Simple image sprite maker. Generating sprite from a lot of small images.
